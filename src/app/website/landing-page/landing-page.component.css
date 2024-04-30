@@ -1,0 +1,351 @@
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #D3D0CF;
+    border-radius: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, #D3D0CF, #F5F5F5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.apple-logo {
+    margin-left: 20%;
+
+}
+
+.vision-img {
+    width: 80%;
+    border-radius: 5%;
+    height: 50%;
+
+}
+
+.content-img {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: #eeeeee;
+
+}
+
+.content-body {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10%;
+}
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-header {
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.btn {
+    background-color: #0080ff;
+    border: 1px solid #D3D0CF;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-right: 2%;
+
+
+}
+
+
+.mute-button {
+    position: absolute;
+    right: 90%;
+    left: 5%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mute-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #666;
+    transition: fill 0.3s ease;
+}
+
+.mute-button:hover svg {
+    fill: #333;
+}
+
+/* Responsive Design for Mobile */
+
+@media screen and (max-width: 600px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: safe;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    .btn {
+        height: 75px;
+        width: 75px;
+        margin-right: 5%;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mute-button {
+        position: absolute;
+        right: 100%;
+        left: 15%;
+        bottom: 0%;
+        left: 8%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .navbar-nav .nav-item {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: flex;
+        margin-right: 80%;
+
+    }
+
+    .content-img {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        margin-top: 2%;
+        background-color: #eeeeee
+    }
+
+    .content-header {
+        font-size: medium;
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision-img {
+        width: 120vw;
+        height: 90vh;
+
+    }
+
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    .btn {
+        background-color: #0080ff;
+        border: 1px solid #D3D0CF;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 5%;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content-header {
+        margin-top: 0.5%;
+    }
+
+    .video {
+        object-fit: cover;
+    }
+
+    .content-button {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+    }
+}
+
+/* Responsive Design for Tablet */
+@media screen and (max-width: 1280px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: safe;
+        align-items: center;
+    }
+
+    .btn {
+        height: 75px;
+        width: 75px;
+        margin-right: 5%;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mute-button {
+        position: absolute;
+        right: 100%;
+        left: 15%;
+        bottom: 0%;
+        left: 8%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .navbar-nav .nav-item {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: flex;
+        margin-right: 80%;
+
+    }
+
+
+    .content-header {
+        font-size: medium;
+        font-family: "Poppins", sans-serif;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10%;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    .btn {
+        background-color: #0080ff;
+        border: 1px solid #D3D0CF;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 5%;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        margin-left: 10%;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content-header {
+        margin-top: 0.5%;
+    }
+
+    .video {
+        object-fit: cover;
+    }
+
+    .content-img {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .content-button {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+    }
+}

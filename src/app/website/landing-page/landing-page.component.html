@@ -1,0 +1,127 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+</head>
+
+<div class="landing-page" style="overflow-x: hidden;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="navbar-brand" href="https://www.apple.com/in/">
+                        <img class="apple-logo"
+                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" height="15"
+                            style="margin-bottom: 30%;" alt="Apple Logo" class="apple-logo">
+                    </a>
+                    <a class="nav-item nav-link active" href="https://www.apple.com/in/store">Store</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/mac/">Mac</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/ipad/">IPad</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/iphone/">iPhone</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/watch/">Watch</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/airpods/">Airpods</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/tv-home/">TV & Home</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/services/">Entertainment</a>
+                    <a class="nav-item nav-link" href="https://www.apple.com/in/shop/accessories/all">Accessories</a>
+                    <a class="nav-item nav-link"
+                        href="https://support.apple.com/en-in?cid=gn-ols-home-hp-tab">Support</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        style="display: flex; margin-top: 1%; margin-left: 1%;" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                        style="display: flex; margin-top: 1%; margin-left: 1%;" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---Two columns one side image and one side text-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <div class="content-img">
+                    <img src="assets/portrait_right_base__cd0c4xdglcs2_large.png" alt="Apple Vision Pro"
+                        class="vision-img">
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="content">
+                    <div class="content-header">
+                        <p>Apple Vision Pro</p>
+                    </div>
+                    <div class="content-body">
+                        <p>Introducing the Apple Vision Pro. <br /> Welcome to the era of Spatial <br /> Computing.</p>
+                        <p>A new way to interact with the world <br />around you.</p>
+                    </div>
+                    <div class="content-btn">
+                        <a href="https://www.apple.com/shop/buy-vision/apple-vision-pro">
+                            <button class="btn">Buy Now</button>
+                        </a>
+                        <a href="https://www.apple.com/apple-vision-pro/">
+                            <button class="btn">Learn More</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-content" id="video">
+        <div class="video-container" (mousemove)="onMouseMove()" (touchmove)="onMouseMove()">
+            <video #videoPlayer loop [muted]='true' autoplay oncanplay="this.play()">
+                <source src="assets/First_Timer_Apple_Vision_Pro.mp4" type="video/mp4">
+            </video>
+            @if (showButton){
+            <button class="play-button" (click)="togglePlay() ">
+                @if (!isPlaying) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                </svg>
+                } @else if (isPlaying) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <path d="m6.5 3a.5.5 0 0 0-1 0v10a.5.5 0 0 0 1 0v-10zm3 0a.5.5 0 0 0-1 0v10a.5.5 0 0 0 1 0v-10z" />
+                </svg>
+                }
+            </button>
+            }
+            @if (showButton){
+            <button class="mute-button" (click)="toggleMute()">
+                @if (isMuted) {
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M4.154 2.154a.5.5 0 0 1 .707 0L8 5.293l3.146-3.146a.5.5 0 0 1 .708.708L8.707 6l3.147 3.146a.5.5 0 1 1-.708.708L8 6.707l-3.146 3.147a.5.5 0 0 1-.708-.708L7.293 6 4.146 2.854a.5.5 0 0 1 0-.707z" />
+                    <path d="M8 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                } @else if (!isMuted) {
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M2.5 4.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7zm1.146-.354a.5.5 0 0 0-.707-.707L1 4.793V3.5a.5.5 0 0 0-.5-.5A.5.5 0 0 0 0 3.5v1a1.5 1.5 0 0 0 1.5 1.5.5.5 0 0 0 0-1 .5.5 0 0 1-.5-.5v-1h1.293l1.854-1.854z" />
+                    <path d="M9.379 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M11.732 2.732a.5.5 0 0 0-.732-.732L8 5.268l-3.732-3.732a.5.5 0 1 0-.732.732L7.268 6 .536 12.732a.5.5 0 0 0 .732.732L8 6.732l3.732 3.732a.5.5 0 0 0 .732-.732L8.732 6l6.732-6.732z" />
+                </svg>
+                }
+            </button>
+            }
+        </div>
+
+    </div>
+
+</div>
