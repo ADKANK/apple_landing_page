@@ -57,7 +57,8 @@ This directory contains the following files:
 ## Screenshots
 
 ![HomePage](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage.png?raw=true)HomePage<br />
-![HomePage_Apple_Vision_Pro_Video](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_Apple_Vision_Pro_Video.png?raw=true)HomePage_Apple_Vision_Pro_Video<br />
+![HomePage_video](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_video?raw=true)HomePage_video<br />
 ![HomePage_mobile_view](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_mobile_view.png?raw=true)HomePage_mobile_view<br />
-![HomePage_Mobile_View_Apple_Vision_Pro_Video](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_Mobile_View_Apple_Vision_Pro_Video.png?raw=true)HomePage_Mobile_View_Apple_Vision_Pro_Video<br />
+![HomePage_mobile_view_2](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_mobile_view_2.png?raw=true)HomePage_mobile_view_2<br />
+![HomePage_IPadPro_view](https://github.com/ADKANK/apple_landing_page/blob/master/Screenshots/HomePage_IPadPro_view.png?raw=true)HomePage_IPadPro_view<br />
 
